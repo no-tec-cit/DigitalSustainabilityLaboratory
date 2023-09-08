@@ -1,0 +1,65 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.TitelArea {
+    background-color: #FA5050;
+    color: white;
+    margin-top: -20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.IdeaButton {
+    border: none;
+    width: 80px;
+    height: 80px;
+    background-image: url('/images/question_mark_green_background.png');
+    background-size: contain;
+}
+
+.QuestionButton {
+    border: none;
+    width: 80px;
+    height: 80px;
+    background-image: url('/images/light_bulb_green_background.png');
+    background-size: contain;
+}
+
+.ButtonColumn {
+    box-shadow: 0px 0px 1px #004B46;
+    width: 80px;
+    height: 80px;
+    background-image: url('/images/vaelg_fag.png');
+    background-size: contain;
+    margin-left: 12px;
+}
+
+.TextColumn {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.SubmitButton {
+    width: 100px;
+    background-color: #004B46;
+    color: white;
+    border: none;
+    padding-top: 2px;
+    font-size: 18px;
+}

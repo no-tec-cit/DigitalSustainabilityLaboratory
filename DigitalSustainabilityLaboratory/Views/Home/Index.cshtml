@@ -1,0 +1,49 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    
+    <!-- Vælg fag -->
+    <div class="row" style="display:table;width:50%;margin:8px auto;">
+        <div class="col-md-3 ButtonColumn"></div>
+        <div class="col-md-9 TextColumn">
+            <form asp-controller="Home" asp-action="Choose">
+                <select class="form-control-sm" name="course" style="padding-top:-2px">
+                    <option selected="selected" value=""></option>
+                    <option value="Programmering">Programmering</option>
+                    <option value="IT support">IT support</option>
+                    <option value="Infrastruktur">Infrastruktur</option>
+                </select>
+                <input type="submit" class="SubmitButton" value="Vælg" />
+            </form>
+        </div>
+    </div>
+
+    <!-- Grøn ide -->
+    <div class="row" style="display:table;width:50%;margin:0 auto;">
+        <div class="col-md-3">
+            <form asp-controller="Home" asp-action="Idea">
+                <input type="submit" value="" class="QuestionButton" />
+            </form>
+        </div>
+        
+        <div class="col-md-9 TextColumn">
+            <h4>Har du fået en grøn ide?</h4>
+        </div>
+    </div>
+
+    <!-- Spørgsmål -->
+    <div class="row" style="display:table;width:50%;margin:0 auto;">
+        <div class="col-md-3">
+            <form asp-controller="Home" asp-action="Questions">
+                <input type="submit" value="" class="IdeaButton" />
+            </form>
+        </div>
+        <div class="col-md-9 TextColumn">
+            <h4>Har du et spørgsmål?</h4>
+        </div>
+    </div>
+    
+</div>
